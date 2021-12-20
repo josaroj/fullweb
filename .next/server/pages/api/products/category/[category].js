@@ -38,7 +38,7 @@ function verifyToken(token) {
   }
 }
 async function checkLogin(token) {
-  const results = await axios__WEBPACK_IMPORTED_MODULE_1___default().get("http://localhost:3000/api/auth/verify", {
+  const results = await axios__WEBPACK_IMPORTED_MODULE_1___default().get("https://fullweb.herokuapp.com/api/auth/verify", {
     headers: {
       Authorization: token
     }
