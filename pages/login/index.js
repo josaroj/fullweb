@@ -13,7 +13,7 @@ export default function LoginPage(){
 
     async function handleLogin(e){
         e.preventDefault();
-        axios.post("http://localhost:3000/api/auth",
+        axios.post("https://fullweb.herokuapp.com/api/auth",
         {
             email: email, password: password
         }).then((res) => {
